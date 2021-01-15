@@ -53,7 +53,7 @@ const createIncompleteList = (text) => {
 
       //テキスト取得
       const text = backButton.parentNode.firstElementChild.innerText;
-      console.log(text);
+      createIncompleteList(text);
     });
 
     //divタグの子要素に各要素を設定
