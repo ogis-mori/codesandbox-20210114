@@ -42,7 +42,9 @@ const onClickAdd = () => {
       const deleteTarget = backButton.parentNode;
       document.getElementById("complete-list").removeChild(deleteTarget);
 
-      //alert("戻す");
+      //テキスト取得
+      const text = backButton.parentNode.firstElementChild.innerText;
+      console.log(text);
     });
 
     //divタグの子要素に各要素を設定
