@@ -19,8 +19,7 @@ const onClickAdd = () => {
   completeButton.innerText = "完了";
   completeButton.addEventListener("click", () => {
     //推された削除ボタンの親タグ（div）を未満了リストから削除
-    const deleteTaget = deleteButton.parentNode;
-    document.getElementById("incomplete-list").removeChild(deleteTaget);
+    deleteFromIncompleteList(deleteButton.parentNode);
   });
 
   //button（削除）タグ生成
