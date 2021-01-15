@@ -18,7 +18,7 @@ const onClickAdd = () => {
   const completeButton = document.createElement("button");
   completeButton.innerText = "完了";
   completeButton.addEventListener("click", () => {
-    //押された削除ボタンの親タグ（div）を未満了リストから削除
+    //押された削除ボタンの親タグ（div）を未完了リストから削除
     deleteFromIncompleteList(deleteButton.parentNode);
 
     //完了リストに追加する要素
@@ -38,7 +38,11 @@ const onClickAdd = () => {
     const backButton = document.createElement("button");
     backButton.innerText = "戻す";
     backButton.addEventListener("click", () => {
-      alert("戻す");
+      //押された削除ボタンの親タグ（div）を完了リストから削除
+      const deleteTarget = backButton.parentNode;
+      document.getElementById("complete-list").removeChild(deleteTarget);
+
+      //alert("戻す");
     });
 
     //divタグの子要素に各要素を設定
@@ -53,7 +57,7 @@ const onClickAdd = () => {
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
   deleteButton.addEventListener("click", () => {
-    //押された削除ボタンの親タグ（div）を未満了リストから削除
+    //押された削除ボタンの親タグ（div）を未完了リストから削除
     deleteFromIncompleteList(deleteButton.parentNode);
   });
 
