@@ -3,20 +3,20 @@ body {
 }
 
 input {
-  border-radius: 16px;  
+  border-radius: 16px;
   border: none;
   padding: 6px 16px;
   outline: none;
 }
 
 button {
-  border-radius: 16px;  
+  border-radius: 16px;
   border: none;
   padding: 4px 16px;
 }
 
 button:hover {
-  background-color: #ff7fff; 
+  background-color: #ff7fff;
   color: #fff;
   cursor: pointer;
 }
@@ -27,7 +27,7 @@ li {
 
 .input-area {
   background-color: #c1ffff;
-  width: 400px:
+  width: 400px;
   height: 30px;
   padding: 8px;
   margin: 8px;
@@ -36,7 +36,7 @@ li {
 
 .imcomplete-area {
   background-color: #c6ffe2;
-  width: 400px:
+  width: 400px;
   height: 200px;
   padding: 8px;
   margin: 8px;
@@ -45,7 +45,7 @@ li {
 
 .complete-area {
   background-color: #ffffe0;
-  width: 400px:
+  width: 400px;
   height: 200px;
   padding: 8px;
   margin: 8px;
